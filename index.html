@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="main.js" defer></script>
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <div class="container">
+        <div class="game-container">
+            <div class="game-name">
+                <h1 class="title">Tic-Tac-Toe!</h1>
+            </div>
+
+            <div class="game-board">
+                
+            </div>
+
+            <div class="game-panel">
+                <div class="player-1 player-details current-player">
+                    <h2 class="player">Player One</h2>
+                    <div class="score">
+                        <p class="score-1-text">Score:</p>
+                        <p class="score-1-value">0</p>
+                    </div>
+                </div>
+                
+                <div class="game-panel-display">
+                    O
+                </div>
+                
+                <div class="player-2 player-details">
+                    <h2 class="player">Player Two</h2>
+                    <div class="score">
+                        <p class="score-2-text">Score:</p>
+                        <p class="score-2-value">0</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="buttons">
+                <button class="btn btn-start">Start Game</button>
+                <button class="btn btn-refresh">Refresh board</button>
+            </div>
+        </div>
+        <div class="modal">
+            <div class="modal-content">
+                <span class="btn-close">&times;</span>
+                <h4 class="modal-header">Change name</h4>
+                <div class="modal-separator"></div>
+                <input type="text" class="name" label="Name" placeholder="">
+                <input type="checkbox" id="ai" name="ai">
+                <label for="ai">Computer AI*</label>
+
+                <div class="difficulty-settings">
+                    <p class="difficulty-heading">Difficulty:</p>
+                    <input type="radio" id="easy" name="difficulty" value="4">
+                    <label for="easy">Easy</label>
+                    <input type="radio" id="medium" name="difficulty" value="6">
+                    <label for="medium">Medium</label>
+                    <input type="radio" id="hard" name="difficulty" value="8">
+                    <label for="hard">Hard</label>
+                    <input type="radio" id="impossible" name="difficulty" value="10">
+                    <label for="impossible">Impossible</label>
+                </div>
+
+                <p class="disclaimer">*Note: You cannot activate the AI on your turn. The other person has to be the AI.
+                    <br>Can only be activated once.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
