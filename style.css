@@ -158,7 +158,8 @@ html, body {
 }
 
 .btn-refresh {
-    margin-left: auto;
+    /* margin-left: auto; */
+    margin: auto;
 }
 @keyframes strobe {
     50% {

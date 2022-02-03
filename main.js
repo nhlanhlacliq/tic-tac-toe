@@ -435,7 +435,7 @@ Gameboard.createBoard();
 // Listen for click events and update gameboard + panelDisplay
 const panelDisplay = document.querySelector('.game-panel-display');
 const gameBoardSelector = document.querySelector('.game-board');
-const startButton = document.querySelector('.btn-start');
+// const startButton = document.querySelector('.btn-start');
 const refreshButton = document.querySelector('.btn-refresh');
 const player1Name = document.querySelector('.player-1').childNodes[1];
 const player2Name = document.querySelector('.player-2').childNodes[1];
@@ -447,10 +447,10 @@ gameBoardSelector.addEventListener('click', (e) => {
     gameController.placePiece(e.target);    
 })
 
-startButton.addEventListener('click', () => {
-    // Gameboard.refreshBoard();
-    alert('Nothing Yet');
-})
+// startButton.addEventListener('click', () => {
+//     // Gameboard.refreshBoard();
+//     alert('Nothing Yet');
+// })
 refreshButton.addEventListener('click', () => {
     Gameboard.refreshBoard();
     gameController.clearPanelDisplay();
